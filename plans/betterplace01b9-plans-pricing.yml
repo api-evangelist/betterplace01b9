@@ -1,0 +1,29 @@
+name: Betterplace01b9
+generated: '2026-09-28'
+method: searched
+source: https://www.betterplace.com/pricing/
+audience: developer-api
+pricing_basis: per-month
+published: true
+plans:
+  - name: Basic
+    price_text: "$12 Per month/Paid annually"
+    price: 12
+    currency: USD
+    billing_period: month
+    description: "Basic plan includes LearnCraft AI, LMS Access, Instructor Dashboard"
+    limits: []
+  - name: Essential
+    price_text: "$59 Per month/Paid annually"
+    price: 59
+    currency: USD
+    billing_period: month
+    description: "Essential plan includes Learncraft AI, LMS Access, Instructor Dashboard, Publishing"
+    limits: []
+  - name: Pro
+    price_text: "$99 Per month/Paid annually"
+    price: 99
+    currency: USD
+    billing_period: month
+    description: "Pro plan includes LearnCraft AI, LMS Access, Instructor Dashboard, Done For You"
+    limits: []

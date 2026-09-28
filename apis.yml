@@ -1,23 +1,74 @@
 aid: betterplace01b9
+
 name: Betterplace01b9
-description: 'Betterplace01b9 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Betterplace01b9 is a learning platform that provides AI‑powered tools for educators to create, deliver, and experience courses. It
+  offers a suite of services including instant course generation, adaptive learning, and a marketplace for instructors. The platform aims to make
+  education more accessible, scalable, and personalized for learners worldwide.
+
 url: https://raw.githubusercontent.com/api-evangelist/betterplace01b9/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
+- Education
+- AI
+- Learning Platform
+- Courses
+- Technology
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/betterplace01b9-plans-pricing.yml
+- type: Hosts
+  url: hosts/betterplace01b9-hosts.yml
+- type: TermsOfService
+  url: https://www.betterplace.com/terms-of-service/
+- type: Pricing
+  url: https://www.betterplace.com/pricing/
+- type: Login
+  url: https://www.betterplace.com/login/
+- type: DomainSecurity
+  url: security/betterplace01b9-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/betterplace01b9
+  url: https://www.betterplace.com
+
+apis:
+- name: Betterplace API
+  description: Betterplace provides a learning platform API (details not publicly documented).
+  humanURL: https://www.betterplace.com/pricing/
+  baseURL: null
+  aid: betterplace01b9:betterplace-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI or other machine‑readable contract found on api.betterplace.com or documentation pages.
+  evidence:
+  - url: https://api.betterplace.com/openapi.json
+    status: dns_error
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
